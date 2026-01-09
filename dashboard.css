@@ -1,0 +1,303 @@
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.game-box {
+    margin-top: 30px;
+    background: #020617;
+    padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    gap: 20px;
+    width: 600px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* LEFT SIDE */
+.game-left {
+    flex: 2;
+}
+
+.game-left h3 {
+    color: #22c55e;
+}
+
+.game-left input,
+.game-left button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* RIGHT SIDE (BET PANEL) */
+.game-right {
+    flex: 1;
+    background: linear-gradient(180deg, #020617, #020617);
+    border: 1px solid #22c55e;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+}
+
+.game-right h4 {
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.balance {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.balance-amount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #22c55e;
+    margin-bottom: 15px;
+}
+
+#betInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Buttons */
+#guessBtn {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#restartBtn {
+    margin-top: 15px;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* WIN ANIMATION */
+.win-animate {
+    animation: glow 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px #22c55e;
+    }
+    to {
+        box-shadow: 0 0 35px #22c55e;
+    }
+}
+
+
+.game-box h3 {
+    color: #22c55e;
+}
+
+.game-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.game-box button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.game-box button:hover {
+    opacity: 0.9;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#attempts {
+    color: #22c55e;
+}
+
+.win {
+    color: #22c55e;
+    font-size: 20px;
+}
+
+.win-animate {
+    animation: pop 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 10px #22c55e;
+    }
+    to {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #22c55e;
+    }
+}
+
+#restartBtn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    opacity: 0.9;
+}
+
+#betInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+}
+
+.casino-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* 💰 BET PANEL */
+.bet-panel {
+    background: #020617;
+    border: 2px solid #22c55e;
+    border-radius: 18px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(34,197,94,0.4);
+}
+
+.bet-panel h4 {
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.balance-label {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.balance {
+    font-size: 28px;
+    color: #22c55e;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#betInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+/* 🎮 GAME PANEL */
+.game-panel {
+    background: #020617;
+    padding: 25px;
+    width: 260px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.game-panel h3 {
+    color: #22c55e;
+}
+
+.game-panel input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.game-panel button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 🔢 FLOATING NUMBER STICKERS */
+.number-stickers {
+    position: relative;
+    width: 120px;
+    height: 260px;
+}
+
+.number-stickers span {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(34,197,94,0.7);
+    animation: float 4s infinite ease-in-out;
+}
+
+.number-stickers span:nth-child(1) { top: 10px; left: 20px; animation-delay: 0s; }
+.number-stickers span:nth-child(2) { top: 60px; left: 60px; animation-delay: 1s; }
+.number-stickers span:nth-child(3) { top: 120px; left: 10px; animation-delay: 2s; }
+.number-stickers span:nth-child(4) { top: 180px; left: 50px; animation-delay: 3s; }
+.number-stickers span:nth-child(5) { top: 220px; left: 25px; animation-delay: 1.5s; }
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(-12px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.6; }
+}
+
+/* 🟢 WIN GLOW */
+.win-animate {
+    animation: glow 0.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 15px #22c55e; }
+    to { box-shadow: 0 0 35px #22c55e; }
+}
